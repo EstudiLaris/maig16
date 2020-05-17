@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+main {
+    text-align: center;
+}
+
+main>h1 {
+    font-size: 1.875rem;
+    background-color: black;
+    color: white;
+    /*display: inline;*/
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    /*padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto*/
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sctServeis article {
+    background-color: white;
+    margin: 0.625rem;
+    width: auto;
+    height: 200px;
+    max-width: 400px;
+    text-align: center;
+    border: solid 1px grey;
+}
+
+#sctServeis article h1 {
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+    background-color: grey;
+    color: white;
+    border-bottom: solid 1px lightgrey;
+}
+
+#sctServeis article h2 {
+    background-color: grey;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#sctServeis article h2 i {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    color: white;
+}
+
+#sctContacte article {
+    background-color: white;
+    margin: 0.625rem;
+    width: auto;
+    max-width: 550px;
+    min-width: 400px;
+    text-align: center;
+}
+
+#sctContacte h1 {
+    font-size: 1.875rem;
+}
+
+label {
+    background-color: transparent;
+}
+
+
+/* topBar */
+
+.topBar {
+    /* position: fixed;*/
+    /* top: 0; */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+    border-bottom: lightgrey;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 1; */
+    /* transition: all 1s ease-out; */
+}
+
+.animateTop {
+    position: relative;
+    animation: animatetop 0.4s ease-out
+}
+
+@keyframes animatetop {
+    from {
+        top: -150px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+#btnNav {
+    width: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+#btn {
+    font-size: 1.75rem;
+    color: black;
+    cursor: pointer;
+}
+
+#titolPrincipal {
+    text-align: center;
+}
+
+.titol {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2.5rem;
+    padding-top: 0.3125rem;
+    color: black;
+    border-bottom: black solid 3px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: black;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#queEs {
+    width: 450px;
+    margin: auto;
+    padding: 15px 0 5px 0;
+    text-align: center;
+    background-color: white;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 3px grey;
+}
+
+footer div {
+    padding: 10px;
+}
+
+footer .titol {
+    border-bottom: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.subTitol {
+    /* https://www.cssfontstack.com/Cambria */
+    font-family: Cambria, Georgia, serif;
+    font-size: 1.9625rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 2.875rem;
+    padding-bottom: 0.1875rem;
+    color: black;
+}
+
+.idioma {
+    display: flex;
+    /* margin-right: 10px; */
+    /* align-items: center; */
+}
+
+.idioma img {
+    width: 1.50rem;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: border-bottom 0.3s ease-out;
+}
+
+a:hover {
+    border-bottom: 3px solid;
+}
+
+footer a:nth-child(1):hover {
+    border-bottom: 3px solid !important;
+}
+
+
+/* Serveis */
+
+#detallServeis .senar {
+    width: 40%;
+    height: 150px;
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+}
+
+#detallEstudi .senar {
+    width: 40%;
+    height: 300px;
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+}
+
+#detallEstudi .senar img {
+    height: 200px;
+}
+
+#detallServeis .parell {
+    width: 60%;
+    height: 150px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#detallEstudi .parell {
+    width: 60%;
+    height: 300px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#detallServeis article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#detallEstudi article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#detallServeis article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+#detallEstudi article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+#detallServeis article div h1 {
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+}
+
+#detallEstudi article div h1 {
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+}
+
+#detallServeis article div h2 i {
+    color: white;
+    font-size: 40px;
+}

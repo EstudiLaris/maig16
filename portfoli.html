@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaScreen.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="whatsBtn.css">
+    <link rel="stylesheet" href="fotoPrincipal.css">
+    <link rel="stylesheet" href="portfoli.css">
+    <title>Estudi Laris</title>
+</head>
+
+<body>
+    <header>
+        <div class="topBar" id="topBar">
+            <div id="btnNav">
+                <label for="check" onclick="openNav()">
+                    <i class="fas fa-bars" id="btn"></i>
+                </label>
+            </div>
+            <a href="contacte.html">
+                <div id="titolPrincipal">
+                    <h1 class="titol" id="titol">ESTUDI LARIS</h1>
+                    <h2 class="subTitol" id="subTitol">Energia - Hàbitat</h2>
+
+                    <div class="titolMobil">
+                        <h2>ESTUDI</h2>
+                    </div>
+                    <img src="pictures/logoElNegre.png" alt="Estudi Laris" class="logoPrincipal">
+                    <div class="titolMobil">
+                        <h2>LARIS</h2>
+                    </div>
+                </div>
+            </a>
+            <ol class="idioma">
+                <li>
+                    <a href="es/index.html">
+                        <img src="pictures/ES.png" alt="" class="imgIco"></a>
+                </li>
+                <li>
+                    <a href="en/index.html">
+                        <img src="pictures/UK.png" alt="" class="imgIco"></a>
+                </li>
+            </ol>
+        </div>
+        <nav class="menuNav">
+            <ul class="navMenu" id="navMenu">
+                <br>
+                <label for="check">
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                  </label>
+                <li>
+                    <a href="javascript:canviPagina('index.html');">Inici</a>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('estudi-laris.html');">L'Estudi</a>
+                </li>
+                <li>
+                    <!--<a href="javascript:obrirSubmenu();">Serveis</a>-->
+                    <a href="javascript:canviPagina('serveis.html');">Serveis</a>
+                    <ul class="subMenu" id="subMenu">
+                        <li>
+                            <a href="javascript:alert('encara no');">Rehabilitació energètica</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Estudi d’habitabilitat</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Regeneració del territori</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Certificacions</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Formació</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('portfoli.html');">Portfoli</a>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('contacte.html');">Contacte</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="previFigure"></div>
+    <main class="container">
+        <h1>ESTALVI ENERGÈTIC</h1>
+        <br>
+
+        <h2>PORTFOLIO</h2>
+        <br>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+            <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <section id="secPortfoli">
+            <article class="column nature">
+
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Mountains" onmouseover="imgStyleIn('Mountains', 'imgMountains')" onmouseout="imgStyleOut('Mountains', 'imgMountains')"> -->
+                <!-- <img src="imgPortfolio/mountains.jpg" alt="Mountains" id="imgMountains"> -->
+                <!-- <h4>Mountains</h4> -->
+                <!-- <p>Lorem ipsum dolor..</p> -->
+                <!--  </div> -->
+
+                <!-- <div id="art001" onmouseover="this.style.background-size='450px 350px'"></div> -->
+                <div id="art001" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';">
+                </div>
+                <div>
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column nature">
+                <!--
+                <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Lights" onmouseover="imgStyleIn('Lights', 'imgLights')" onmouseout="imgStyleOut('Lights', 'imgLights')">
+                    <img src="imgPortfolio/lights.jpg" alt="Lights" id="imgLights">
+                    <h4>Lights</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+                -->
+                <div id="art002" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Lights</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column nature">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Forest" onmouseover="imgStyleIn('Forest', 'imgForest')" onmouseout="imgStyleOut('Forest', 'imgForest')">
+                    <img src="imgPortfolio/nature.jpg" alt="Nature" id="imgForest">
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art003" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+
+            <article class="column cars">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Retro" onmouseover="imgStyleIn('Retro', 'imgRetro')" onmouseout="imgStyleOut('Retro', 'imgRetro')">
+                    <img src="imgPortfolio/cars1.jpg" alt="Car" id="imgRetro">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art004" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column cars">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Fast" onmouseover="imgStyleIn('Fast', 'imgFast')" onmouseout="imgStyleOut('Fast', 'imgFast')">
+                    <img src="imgPortfolio/cars2.jpg" alt="Car" id="imgFast">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art005" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column cars">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Classic" onmouseover="imgStyleIn('Classic', 'imgClassic')" onmouseout="imgStyleOut('Classic', 'imgClassic')">
+                    <img src="imgPortfolio/cars3.jpg" alt="Car" id="imgClassic">
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art006" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+
+            <article class="column people">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Girl" onmouseover="imgStyleIn('Girl', 'imgGirl')" onmouseout="imgStyleOut('Girl', 'imgGirl')">
+                    <img src="imgPortfolio/people1.jpg" alt="Car" id="imgGirl">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art007" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column people">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Man" onmouseover="imgStyleIn('Man', 'imgMan')" onmouseout="imgStyleOut('Man', 'imgMan')">
+                    <img src="imgPortfolio/people2.jpg" alt="Car" id="imgMan">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art008" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <article class="column people">
+                <!-- <div class="content" onclick="canviPagina('fullSecundariPortfolio.html')" id="Woman" onmouseover="imgStyleIn('Woman', 'imgWoman')" onmouseout="imgStyleOut('Woman', 'imgWoman')">
+                    <img src="imgPortfolio/people3.jpg" alt="Car" id="imgWoman">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div> -->
+                <div id="art009" class="content" onclick="canviPagina('fullSecundariPortfolio.html')" onmouseover="javascript:this.style.backgroundSize = '500px 350px';" onmouseout="javascript:this.style.backgroundSize = '400px 250px';"></div>
+                <div>
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </article>
+            <!-- END GRID -->
+        </section>
+
+        <!-- END MAIN -->
+    </main>
+
+    <footer class="container">
+        <div><a href="contacte.html" class="titol">ESTUDI LARIS</a></div>
+        <div>
+            <i class="fas fa-at" id="idMail"></i>
+            <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fas fa-mobile-alt" id="idPhone"></i>
+            <a href="tel:34666333999">  +34 666 333 999</i>
+            </a>
+        </div>
+        <div>
+            <i class="fab fa-whatsapp" id="idWhatsCA"></i>
+            <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</i>
+            </a>
+        </div>
+
+        <div><a href="politica.html" target="_blank">Política de privacitat</a></div>
+    </footer>
+
+    <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies.">
+        <img src="pictures/Whatsapp-Icon_33936.png" alt="whatsapp" id="whatsBtn">
+    </a>
+
+
+    <script src="menu.js"></script>
+    <script src="scroll.js"></script>
+    <script src="fotoPrincipal.js"></script>
+    <script src="portfoli.js"></script>
+</body>
+
+</html>

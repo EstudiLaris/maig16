@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaScreen.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="whatsBtn.css">
+    <link rel="stylesheet" href="fotoPrincipal.css">
+    <link rel="stylesheet" href="portfoli.css">
+    <title>Estudi Laris</title>
+</head>
+
+<body>
+    <header>
+        <div class="topBar" id="topBar">
+            <div id="btnNav">
+                <label for="check" onclick="openNav()">
+                    <i class="fas fa-bars" id="btn"></i>
+                </label>
+            </div>
+            <a href="contacte.html">
+                <div id="titolPrincipal">
+                    <h1 class="titol" id="titol">ESTUDI LARIS</h1>
+                    <h2 class="subTitol" id="subTitol">Energia - Hàbitat</h2>
+
+                    <div class="titolMobil">
+                        <h2>ESTUDI</h2>
+                    </div>
+                    <img src="pictures/logoElNegre.png" alt="Estudi Laris" class="logoPrincipal">
+                    <div class="titolMobil">
+                        <h2>LARIS</h2>
+                    </div>
+                </div>
+            </a>
+            <ol class="idioma">
+                <li>
+                    <a href="es/index.html">
+                        <img src="pictures/ES.png" alt="" class="imgIco"></a>
+                </li>
+                <li>
+                    <a href="en/index.html">
+                        <img src="pictures/UK.png" alt="" class="imgIco"></a>
+                </li>
+            </ol>
+        </div>
+        <nav class="menuNav">
+            <ul class="navMenu" id="navMenu">
+                <br>
+                <label for="check">
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                  </label>
+                <li>
+                    <a href="javascript:canviPagina('index.html');">Inici</a>
+                </li>
+                <li>
+                    <!-- <a href="javascript:canviPagina('equip.html');">L'Estudi</a> -->
+                    <a href="javascript:alert('encara no');">L'estudi</a>
+                </li>
+                <li>
+                    <!--<a href="javascript:obrirSubmenu();">Serveis</a>-->
+                    <a href="javascript:canviPagina('serveis.html');">Serveis</a>
+                    <ul class="subMenu" id="subMenu">
+                        <li>
+                            <a href="javascript:alert('encara no');">Rehabilitació energètica</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Estudi d’habitabilitat</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Regeneració del territori</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Certificacions</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Formació</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('portfoli.html');">Portfoli</a>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('contacte.html');">Contacte</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container">
+        <h1>ESTUDI LARIS</h1>
+        <div id="queEs">
+            <p>neix de la greu crisi ambiental, social i econòmica que afecta el nostre planeta.</p>
+        </div>
+        <br>
+        <br>
+        <h1>L'Estudi</h1>
+        <section id="detallEstudi">
+            <article>
+                <div class="senar">
+                    <h1>Emergència climàtica</h1>
+                    <img src="images/Emergencia-climatica.jpg" alt="">
+                </div>
+                <div class="parell">
+                    <p>Ens trobem davant d’una situació d’emergència climàtica que causa grans catàstrofes ambientals, les quals són agreujades perquè el territori està deshabitat, i per tant, no gestionat.</p>
+                </div>
+            </article>
+            <article>
+                <div class="parell">No es té cura del territori perquè la població n’està desvinculada. Hem perdut la nostra cultura territorial. El despoblament causa problemes que van mes enllà, com incendis i problemes ambientals.</div>
+                <div class="senar">
+                    <h1>Despoblació</h1>
+                    <img src="images/despoblacio.jpg" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="senar">
+                    <h1>Rehabilitació</h1>
+                    <img src="images/rehabilitacio.jpg" alt="">
+                </div>
+                <div class="parell">
+                    <p>Cal facilitar la rehabilitació i regeneració del territori aprofitant les construccions ja fetes (no construint més). Des del pla físic de l’arquitectura i del pla de fluxos energètics i materials cal reactivar tal entorn rural perquè
+                        la població pugui viure-hi, millorant així les condicions d’habitabilitat de zones rurals i periurbanes.</p>
+                </div>
+            </article>
+            <article>
+                <div class="parell">
+                    <p>És important empoderar la societat per cuidar i gestionar la seva pròpia terra sense dependre d’elements que s’hagin d’importar d’altres regions.</p>
+                </div>
+                <div class="senar">
+                    <h1>Economia circular</h1>
+                    <img src="images/economia-circular.jpg" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="senar">
+                    <h1>Els nostres serveis</h1>
+                    <img src="images/eficiencia.png" alt="">
+                </div>
+                <div class="parell">
+                    <p>Des d’<b>ESTUDI LARIS</b> oferim serveis enfocats a millorar l’habitabilitat de la població vinculant-la al territori, així com planificació i acompanyament en estratègies de regeneració territorials i rehabilitació + rehabitat d’edificis.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <section>
+        <div id="queEs">
+            <p>
+                El nostre nom prové del llatí <b>Laris foci</b>, llar de foc en català. Tradicionalment la llar de foc aporta unes condicions d’habitabilitat, com seguretat, llum, menjar i calor. Avui en dia la llar també es refereix a la casa i a les
+                persones que hi viuen.
+
+            </p>
+        </div>
+    </section>
+    <footer class="container">
+        <div><a href="contacte.html" class="titol">ESTUDI LARIS</a></div>
+        <div>
+            <i class="fas fa-at" id="idMail"></i>
+            <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fas fa-mobile-alt" id="idPhone"></i>
+            <a href="tel:34666333999">  +34 666 333 999</i>
+            </a>
+        </div>
+        <div>
+            <i class="fab fa-whatsapp" id="idWhatsCA"></i>
+            <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</i>
+            </a>
+        </div>
+
+        <div><a href="politica.html" target="_blank">Política de privacitat</a></div>
+    </footer>
+
+    <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies.">
+        <img src="pictures/Whatsapp-Icon_33936.png" alt=" " id="whatsBtn">
+    </a>
+
+
+    <script src="menu.js"></script>
+    <script src="scroll.js"></script>
+    <script src="fotoPrincipal.js"></script>
+    <script src="portfoli.js"></script>
+</body>
+
+</html>

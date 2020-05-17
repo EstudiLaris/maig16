@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaScreen.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="whatsBtn.css">
+    <link rel="stylesheet" href="fotoPrincipal.css">
+    <link rel="stylesheet" href="portfoli.css">
+    <title>Estudi Laris</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="topBar" id="topBar">
+            <div id="btnNav">
+                <label for="check" onclick="openNav()">
+                    <i class="fas fa-bars" id="btn"></i>
+                </label>
+            </div>
+            <a href="contacte.html">
+                <div id="titolPrincipal">
+                    <h1 class="titol" id="titol">ESTUDI LARIS</h1>
+                    <h2 class="subTitol" id="subTitol">Energia - Hàbitat</h2>
+
+                    <div class="titolMobil">
+                        <h2>ESTUDI</h2>
+                    </div>
+                    <img src="pictures/logoElNegre.png" alt="Estudi Laris" class="logoPrincipal">
+                    <div class="titolMobil">
+                        <h2>LARIS</h2>
+                    </div>
+                </div>
+            </a>
+            <ol class="idioma">
+                <li>
+                    <a href="es/index.html">
+                        <img src="pictures/ES.png" alt="" class="imgIco"></a>
+                </li>
+                <li>
+                    <a href="en/index.html">
+                        <img src="pictures/UK.png" alt="" class="imgIco"></a>
+                </li>
+            </ol>
+        </div>
+        <nav class="menuNav">
+            <ul class="navMenu" id="navMenu">
+                <br>
+                <label for="check">
+                    <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+                  </label>
+                <li>
+                    <a href="javascript:canviPagina('index.html');">Inici</a>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('estudi-laris.html');">L'Estudi</a>
+                </li>
+                <li>
+                    <!--<a href="javascript:obrirSubmenu();">Serveis</a>-->
+                    <a href="javascript:canviPagina('serveis.html');">Serveis</a>
+                    <ul class="subMenu" id="subMenu">
+                        <li>
+                            <a href="javascript:alert('encara no');">Rehabilitació energètica</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Estudi d’habitabilitat</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Regeneració del territori</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Certificacions</a>
+                        </li>
+                        <li>
+                            <a href="javascript:alert('encara no');">Formació</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('portfoli.html');">Portfoli</a>
+                </li>
+                <li>
+                    <a href="javascript:canviPagina('contacte.html');">Contacte</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="previFigure"></div>
+    <figure>
+        <img src="images/montserrat.webp" alt="">
+        <figcaption>
+            <h1 class="textFotoPrincipal fadeIn">Territori</h1>
+            <h1 class="textFotoPrincipal fadeIn">Arquitectura</h1>
+            <h1 class="textFotoPrincipal fadeIn">Energia</h1>
+            <h1 class="textFotoPrincipal fadeIn">Recursos</h1>
+            <h1 class="textFotoPrincipal fadeIn">Hàbitat</h1>
+        </figcaption>
+    </figure>
+    <br>
+    <main class="container">
+        <h1>ESTUDI LARIS</h1>
+        <div id="queEs">
+            <p>és la unió de professionals de l’arquitectura i l’enginyeria experts en la millora de l’habitabilitat, des del territori fins a la llar.</p>
+        </div>
+        <br>
+        <h1>Serveis</h1>
+        <section id="sctServeis">
+
+            <article>
+                <h1>Rehabilitació energètica</h1>
+                <h2><i class="fas fa-euro-sign"></i></h2>
+                <p>Planifiquem les intervencions necessàries per a disminuir la demanda energètica d’un habitatge o d’un conjunt d’edifici</p>
+            </article>
+            <article>
+                <h1>Estudi d’habitabilitat</h1>
+                <h2><i class="fas fa-home"></i></h2>
+                <p>Definim les estratègies per a millorar l’ús dels espais de dins de l’habitatge i de l’espai públic.</p>
+            </article>
+            <article>
+                <h1>Regeneració del territori</h1>
+                <h2><i class="fas fa-mountain"></i></h2>
+                <p>Estudiem el metabolisme territorial, millorant la gestió dels seus recursos i les condicions de vida de la seva població. </p>
+            </article>
+            <article>
+                <h1>Certificacions</h1>
+                <h2><i class="fas fa-drafting-compass"></i></h2>
+                <p>Realitzem diverses certificacions a nivell d’habitatge, com la Cèdula d’habitabilitat, CEE, i ITE</p>
+            </article>
+            <article>
+                <h1>Formació</h1>
+                <h2><i class="fas fa-book-open"></i></h2>
+                <p>Xerrades sobre eficiència energètica, cursos d’eines...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div><a href="contacte.html" class="titol">ESTUDI LARIS</a></div>
+        <div>
+            <i class="fas fa-at" id="idMail"></i>
+            <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fas fa-mobile-alt" id="idPhone"></i>
+            <a href="tel:34666333999">  +34 666 333 999</i>
+            </a>
+        </div>
+        <div>
+            <i class="fab fa-whatsapp" id="idWhatsCA"></i>
+            <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</i>
+            </a>
+        </div>
+
+        <div><a href="politica.html" target="_blank">Política de privacitat</a></div>
+    </footer>
+
+    <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies.">
+        <img src="pictures/Whatsapp-Icon_33936.png" alt="whatsapp" id="whatsBtn">
+    </a>
+
+
+    <script src="menu.js"></script>
+    <script src="scroll.js"></script>
+    <script src="fotoPrincipal.js"></script>
+    <script src="portfoli.js"></script>
+</body>
+
+</html>

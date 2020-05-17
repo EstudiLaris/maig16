@@ -1,0 +1,84 @@
+figure {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+figure img {
+    width: 80%;
+    height: auto;
+}
+
+figure h1 {
+    color: white;
+}
+
+figcaption {
+    /* Bottom left text */
+    position: absolute;
+    bottom: 2.5rem;
+}
+
+
+/* Fading animation */
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .4
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .4
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    figure img {
+        width: 100%;
+    }
+    figure h1 {
+        font-size: 1.75rem;
+    }
+    figcaption {
+        /* Bottom left text */
+        position: absolute;
+        bottom: 1rem;
+    }
+}

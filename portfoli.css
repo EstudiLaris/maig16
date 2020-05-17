@@ -1,0 +1,142 @@
+#secPortfoli {
+    display: flex;
+}
+
+#secPortfoli article {
+    margin-top: 20px;
+    width: 380px;
+    height: 320px;
+}
+
+.content {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content img {
+    margin-bottom: 15px;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5%;
+    box-shadow: 5px 10px 18px #888888;
+    transition: 0.5s;
+}
+
+.column {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.column h4:hover,
+.column p:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+/* The "show" class is added to the filtered elements  */
+
+.hidden {
+    display: none;
+    /* Hide all elements by default */
+}
+
+.show {
+    display: block;
+    animation: .6s zoom-in;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(.1);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+
+/* Style the buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+#art001,
+#art002,
+#art003,
+#art004,
+#art005,
+#art006,
+#art007,
+#art008,
+#art009 {
+    width: 380px;
+    height: 240px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: solid white 5px;
+    border-radius: 5%;
+    box-shadow: 5px 10px 18px #888888;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#art001 {
+    background-image: url(imgPortfolio/mountains.jpg);
+    background-size: 400px 250px;
+}
+
+#art002 {
+    background-image: url(imgPortfolio/lights.jpg);
+    background-size: 400px 250px;
+}
+
+#art003 {
+    background-image: url(imgPortfolio/nature.jpg);
+    background-size: 400px 250px;
+}
+
+#art004 {
+    background-image: url(imgPortfolio/cars1.jpg);
+    background-size: 400px 250px;
+}
+
+#art005 {
+    background-image: url(imgPortfolio/cars2.jpg);
+    background-size: 400px 250px;
+}
+
+#art006 {
+    background-image: url(imgPortfolio/cars3.jpg);
+    background-size: 400px 250px;
+}
+
+#art007 {
+    background-image: url(imgPortfolio/people1.jpg);
+    background-size: 400px 250px;
+}
+
+#art008 {
+    background-image: url(imgPortfolio/people2.jpg);
+    background-size: 400px 250px;
+}
+
+#art009 {
+    background-image: url(imgPortfolio/people3.jpg);
+    background-size: 400px 250px;
+}
