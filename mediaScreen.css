@@ -16,7 +16,8 @@
         justify-content: center;
     }
     .logoPrincipal {
-        height: 90px;
+        border: solid 2px;
+        height: 70px;
         width: auto;
         display: flex;
     }
