@@ -287,7 +287,7 @@ footer a:nth-child(1):hover {
 
 #detallEstudi .senar {
     width: 40%;
-    height: 300px;
+    height: 400px;
     background-color: grey;
     color: white;
     overflow: hidden;
@@ -306,7 +306,7 @@ footer a:nth-child(1):hover {
 
 #detallEstudi .parell {
     width: 60%;
-    height: 300px;
+    height: 400px;
     background-color: white;
     border: solid 1px grey;
 }
